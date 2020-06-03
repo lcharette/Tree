@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Tree\Builder;
 
 use Tree\Node\NodeInterface;
@@ -14,7 +15,6 @@ use Tree\Node\NodeInterface;
 /**
  * Interface that allows a fluent tree building.
  *
- * @package    Tree
  * @author     Nicolò Martini <nicmartnic@gmail.com>
  */
 interface NodeBuilderInterface
@@ -88,4 +88,3 @@ interface NodeBuilderInterface
      */
     public function nodeInstanceByValue($value = null);
 }
-

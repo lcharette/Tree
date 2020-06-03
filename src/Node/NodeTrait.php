@@ -23,7 +23,6 @@ trait NodeTrait
      * parent
      *
      * @var NodeInterface
-     * @access private
      */
     private $parent;
 
@@ -33,7 +32,7 @@ trait NodeTrait
     private $children = [];
 
     /**
-     * @param mixed $value
+     * @param mixed           $value
      * @param NodeInterface[] $children
      */
     public function __construct($value = null, array $children = [])
@@ -156,7 +155,7 @@ trait NodeTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getAncestorsAndSelf()
     {
@@ -183,7 +182,7 @@ trait NodeTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getNeighborsAndSelf()
     {
@@ -191,7 +190,7 @@ trait NodeTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function isLeaf()
     {
@@ -207,7 +206,7 @@ trait NodeTrait
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function isChild()
     {
@@ -223,8 +222,9 @@ trait NodeTrait
     {
         $node = $this;
 
-        while ($parent = $node->getParent())
+        while ($parent = $node->getParent()) {
             $node = $parent;
+        }
 
         return $node;
     }
@@ -289,7 +289,8 @@ trait NodeTrait
 
     private function removeParentFromChildren()
     {
-        foreach ($this->getChildren() as $child)
+        foreach ($this->getChildren() as $child) {
             $child->setParent(null);
+        }
     }
-} 
+}

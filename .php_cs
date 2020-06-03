@@ -1,10 +1,6 @@
 <?php
 
-$header = 'UserFrosting Cache (http://www.userfrosting.com)
-
-@link      https://github.com/userfrosting/cache
-@copyright Copyright (c) 2013-2019 Alexander Weissman
-@license   https://github.com/userfrosting/cache/blob/master/LICENSE.md (MIT License)';
+$header = '';
 
 $rules = [
     '@PSR2'                                       => true,
@@ -66,7 +62,6 @@ $rules = [
     'phpdoc_align'                                => true,
     'phpdoc_indent'                               => true,
     'phpdoc_inline_tag'                           => true,
-    'phpdoc_no_empty_return'                      => true,
     'phpdoc_no_access'                            => true,
     'phpdoc_no_alias_tag'                         => ['type' => 'var'],
     'phpdoc_no_package'                           => true,

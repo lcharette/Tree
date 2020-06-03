@@ -10,13 +10,10 @@
 
 namespace Tree\Visitor;
 
-
 use Tree\Node\NodeInterface;
 
 /**
  * Class YieldVisitor
- *
- * @package Tree\Visitor
  */
 class YieldVisitor implements Visitor
 {
@@ -37,4 +34,4 @@ class YieldVisitor implements Visitor
 
         return $yield;
     }
-} 
+}

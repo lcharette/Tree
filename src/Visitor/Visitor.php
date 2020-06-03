@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Tree\Visitor;
 
 use Tree\Node\NodeInterface;
@@ -14,13 +15,12 @@ use Tree\Node\NodeInterface;
 /**
  * Visitor interface for Nodes
  *
- * @package    Tree
  * @author     Nicolò Martini <nicmartnic@gmail.com>
  */
 interface Visitor
 {
     /**
-     * @param NodeInterface $node
+     * @param  NodeInterface $node
      * @return mixed
      */
     public function visit(NodeInterface $node);

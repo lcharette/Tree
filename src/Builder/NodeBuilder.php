@@ -38,8 +38,7 @@ class NodeBuilder implements NodeBuilderInterface
     {
         $this
             ->emptyStack()
-            ->pushNode($node)
-        ;
+            ->pushNode($node);
 
         return $this;
     }

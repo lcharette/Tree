@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace Tree\Node;
 
 use Tree\Visitor\Visitor;
@@ -14,7 +15,6 @@ use Tree\Visitor\Visitor;
 /**
  * Interface for tree nodes
  *
- * @package    Tree
  * @author     Nicolò Martini <nicmartnic@gmail.com>
  */
 interface NodeInterface
@@ -79,7 +79,7 @@ interface NodeInterface
     /**
      * setParent
      *
-     * @param NodeInterface $parent
+     * @param  NodeInterface $parent
      * @return void
      */
     public function setParent(NodeInterface $parent = null);
@@ -157,7 +157,7 @@ interface NodeInterface
     /**
      * Accept method for the visitor pattern (see http://en.wikipedia.org/wiki/Visitor_pattern)
      *
-     * @param Visitor $visitor
+     * @param  Visitor $visitor
      * @return void
      */
     public function accept(Visitor $visitor);
